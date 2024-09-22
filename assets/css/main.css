@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Exo:wght@400;500;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+    --color-primary: #FF6C2E;
+    --background-color: #070707;
+    --font-color: #D4D4D4;
+    --dark: #070707;
+}
+
+* {
+    color: var(--font-color);
+    font-family: "Exo", sans-serif;
+}
+
+.linear-dark-text {
+    background: linear-gradient(to right, var(--dark) -100%, var(--color-primary));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linear-light-text {
+    background: linear-gradient(to right, var(--font-color), var(--dark) 150%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.linear-container {
+    background: linear-gradient(to top, var(--color-primary), var(--dark));
+}
